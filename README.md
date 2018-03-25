@@ -13,3 +13,26 @@ An application for content creators, YouTubers to register and jot down ideas fo
 - Express-session
 - Handlebars
 - Bootstrap 4
+
+<hr>
+
+## Approach
+
+1. Create Package.json file 
+   
+   ```
+    npm init
+   ```
+   
+   - Install Express and create a server
+   
+     ```
+      npm install express --save
+     ```
+  
+  - Creating basic routes <br>
+    <img src = "">
+  
+  - Adding express middlewares
+    - More information -> https://expressjs.com/en/guide/using-middleware.html
+  
