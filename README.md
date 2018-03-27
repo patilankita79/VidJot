@@ -35,4 +35,24 @@ An application for content creators, YouTubers to register and jot down ideas fo
   
   - Adding express middlewares
     - More information -> https://expressjs.com/en/guide/using-middleware.html
-  
+    
+  - Adding Express-Handlerbars which is a templating engine
+     - More information -> https://github.com/ericf/express-handlebars
+     
+     ```
+      npm install express-handlebars --save
+     ```
+   By default, Express uses views directory to render views and hence views directory needs to be created and inside the views directory, templates can be stored. We can pass dynamic data into views
+   
+   ```
+     const exphbs  = require('express-handlebars');
+     const path = require('path');
+
+     // Handlebars Middleware
+     app.engine('handlebars', exphbs({
+        defaultLayout: 'main',
+        layoutsDir: path.resolve(__dirname, 'views/layouts')
+    }));
+   app.set('views',path.resolve(__dirname,'./views'));
+   app.set('view engine', 'handlebars');
+   ```
