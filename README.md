@@ -65,4 +65,4 @@ An application for content creators, YouTubers to register and jot down ideas fo
 ## Problems encountered
 
 1. No such file or directory (When I was using Handlebars)
-   Solution: https://github.com/ericf/express-handlebars/issues/195
+   - Solution: https://github.com/ericf/express-handlebars/issues/195
