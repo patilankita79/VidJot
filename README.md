@@ -57,7 +57,8 @@ An application for content creators, YouTubers to register and jot down ideas fo
    app.set('view engine', 'handlebars');
    ```
    
-   
+  - Creating partials with handlebars
+      - partial is created for navigation bar
    
    
 <hr>
@@ -66,3 +67,9 @@ An application for content creators, YouTubers to register and jot down ideas fo
 
 1. No such file or directory (When I was using Handlebars)
    - Solution: https://github.com/ericf/express-handlebars/issues/195
+   
+<hr>
+
+## References: <br>
+
+- https://cloudfour.com/thinks/the-hidden-power-of-handlebars-partials/
