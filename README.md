@@ -18,47 +18,50 @@ An application for content creators, YouTubers to register and jot down ideas fo
 
 ## Approach
 
-1. Create Package.json file 
+1. **Create Package.json file** 
    
-   ```
-    npm init
-   ```
+      ```
+       npm init
+      ```
    
-   - Install Express and create a server
+      - Install Express and create a server
    
-     ```
-      npm install express --save
-     ```
+        ```
+         npm install express --save
+        ```
   
-  - Creating basic routes <br>
-    <img src = "">
+      - Creating basic routes such as, /,  /about, etc.
+        
   
-  - Adding express middlewares
-    - More information -> https://expressjs.com/en/guide/using-middleware.html
+      - Adding express middlewares
+         - More information -> https://expressjs.com/en/guide/using-middleware.html
     
-  - Adding Express-Handlerbars which is a templating engine
-     - More information -> https://github.com/ericf/express-handlebars
-     
-     ```
-      npm install express-handlebars --save
-     ```
-   By default, Express uses views directory to render views and hence views directory needs to be created and inside the views directory, templates can be stored. We can pass dynamic data into views
-   
-   ```
-     const exphbs  = require('express-handlebars');
-     const path = require('path');
+      - Adding Express-Handlerbars which is a templating engine
+         - More information -> https://github.com/ericf/express-handlebars
 
-     // Handlebars Middleware
-     app.engine('handlebars', exphbs({
-        defaultLayout: 'main',
-        layoutsDir: path.resolve(__dirname, 'views/layouts')
-    }));
-   app.set('views',path.resolve(__dirname,'./views'));
-   app.set('view engine', 'handlebars');
-   ```
+        ```
+         npm install express-handlebars --save
+        ```
+        
+         By default, Express uses views directory to render views and hence views directory needs to be created and inside the views   directory, templates can be stored. We can pass dynamic data into views
    
-  - Creating partials with handlebars
+         ```
+           const exphbs  = require('express-handlebars');
+           const path = require('path');
+
+           // Handlebars Middleware
+           app.engine('handlebars', exphbs({
+              defaultLayout: 'main',
+              layoutsDir: path.resolve(__dirname, 'views/layouts')
+          }));
+         app.set('views',path.resolve(__dirname,'./views'));
+         app.set('view engine', 'handlebars');
+         ```
+   
+   - Creating partials with handlebars
       - partial is created for navigation bar
+ 
+ 2. Database
    
    
 <hr>
