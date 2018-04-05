@@ -61,14 +61,25 @@ An application for content creators, YouTubers to register and jot down ideas fo
    - Creating partials with handlebars
       - partial is created for navigation bar
  
- 2. Database
+ 2. **Database**
    
    - Install mongoose
      ```
       npm install mongoose --save
      ```
    
+ 3. **Creating Models**
    
+      - Creating a model named Idea. This model will consist of **title** which is of type String, **details** which is of type String, **Date** which is of type Date
+      
+      - Adding routes for models
+         - /ideas
+         - /ideas/add
+       
+       - Install body-parser (With body parser we can access whatever we have submitted i.e. we get access to form values)
+         ```
+            npm install body-parser --save
+         ```
 <hr>
 
 ## Problems encountered
