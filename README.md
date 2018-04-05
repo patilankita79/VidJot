@@ -63,6 +63,11 @@ An application for content creators, YouTubers to register and jot down ideas fo
  
  2. Database
    
+   - Install mongoose
+     ```
+      npm install mongoose --save
+     ```
+   
    
 <hr>
 
