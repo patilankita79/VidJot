@@ -79,7 +79,10 @@ An application for content creators, YouTubers to register and jot down ideas fo
        - Install body-parser (With body parser we can access whatever we have submitted i.e. we get access to form values)
          ```
             npm install body-parser --save
-         ```
+          ```
+   4. **Handling the Idea form submission**
+      - Saving the title and details of an idea to MongoDB
+      - Performing CRUD operations on an Idea 
 <hr>
 
 ## Problems encountered
