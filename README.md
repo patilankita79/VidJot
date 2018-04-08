@@ -16,6 +16,13 @@ An application for content creators, YouTubers to register and jot down ideas fo
 
 <hr>
 
+### Routes used in the application
+
+- /ideas
+- /ideas/add
+- /users/login
+- /users/register
+
 ## Approach
 
 1. **Create Package.json file** 
@@ -69,12 +76,18 @@ An application for content creators, YouTubers to register and jot down ideas fo
      ```
    
  3. **Creating Models**
+      
+      - The application has 2 models
+         - Idea
+         - User
    
       - Creating a model named Idea. This model will consist of **title** which is of type String, **details** which is of type String, **Date** which is of type Date
       
       - Adding routes for models
          - /ideas
          - /ideas/add
+      
+      - Creating a model named User. This model will consist of **name** which is of type String, **email** which is of type String, **Password** which is of type String (Password will be encrypted in later stages using bcrypt) and **Date** which is of type Date
        
        - Install body-parser (With body parser we can access whatever we have submitted i.e. we get access to form values)
          ```
@@ -100,6 +113,13 @@ An application for content creators, YouTubers to register and jot down ideas fo
          ```
             npm install express-session --save
          ```
+   5. Encrypting the password with bcryptjs
+      
+      ```
+         npm install bcryptjs --save
+      ```
+      
+   6. Video idea is private to each user and hence to separate video ideas for each user,need to implement authentication. Authentication is implemented with <a href="http://www.passportjs.org/">Passport.js</a> and local strategy of Passport.js is used.
 <hr>
 
 ## Problems encountered
