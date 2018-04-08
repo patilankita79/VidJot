@@ -83,6 +83,23 @@ An application for content creators, YouTubers to register and jot down ideas fo
    4. **Handling the Idea form submission**
       - Saving the title and details of an idea to MongoDB
       - Performing CRUD operations on an Idea 
+      
+         ```
+          npm install method-override --save
+         ```
+         
+       - Implementing flash messages -> to give flash message when user adds or deletes an idea
+         https://github.com/jaredhanson/connect-flash
+         ```
+            npm install connect-flash --save
+         ```
+         
+        
+         https://github.com/expressjs/session
+
+         ```
+            npm install express-session --save
+         ```
 <hr>
 
 ## Problems encountered
